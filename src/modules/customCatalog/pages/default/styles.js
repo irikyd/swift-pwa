@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '32px'
     },
     wrapperCatalog: {
-        margin: '40px 0',
         [theme.breakpoints.down('sm')]: {
             paddingLeft: 20,
             paddingRight: 20,

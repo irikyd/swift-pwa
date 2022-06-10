@@ -5,11 +5,13 @@ import Typography from '@common_typography';
 import GridList from '@common_gridlistCustom';
 import ProductItem from '@plugin_productitem/index';
 import useStyles from '@core_modules/customCatalog/pages/default/styles';
+import CampaignBar from '@core_modules/commons/CampaignBar/index';
 
 const CustomCatalog = (props) => {
+    const { t } = props;
     const styles = useStyles();
 
-    const { loading, error, data } = getProducts();
+    const { loading, data } = getProducts();
 
     const config = {
         title: 'Custom Catalog',
@@ -18,26 +20,9 @@ const CustomCatalog = (props) => {
         pageType: 'home',
     };
 
-    console.log(data);
-
-    if (loading) {
-        return (
-            <Layout {...props} pageConfig={config}>
-                <p>Loading...</p>
-            </Layout>
-        );
-    }
-
-    if (error) {
-        return (
-            <Layout {...props} pageConfig={config} {...other}>
-                <p>Error</p>
-            </Layout>
-        );
-    }
-
     return (
         <Layout {...props} pageConfig={config} className={styles.wrapperCatalog}>
+            <CampaignBar text={t('custom:promoText')} />
             <Typography
                 align="center"
                 letter="uppercase"
@@ -45,7 +30,7 @@ const CustomCatalog = (props) => {
                 variant="span"
                 className={styles.title}
             >
-                Custom Catalog
+                {t('custom:title')}
             </Typography>
             {!loading && (
                 <GridList
