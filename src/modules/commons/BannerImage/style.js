@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
         alignItems: 'center',
         position: 'absolute',
-        zIndex: '10',
+        zIndex: '1',
         height: '100%',
         width: '100%',
         top: 0,

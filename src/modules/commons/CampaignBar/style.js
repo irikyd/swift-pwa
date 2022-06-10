@@ -5,10 +5,6 @@ const useStyles = makeStyles((theme) => ({
         height: '52px',
     },
     wrapper: {
-        [theme.breakpoints.down('sm')]: {
-            paddingLeft: 20,
-            paddingRight: 20,
-        },
         display: 'flex',
         height: '100%',
     },

@@ -27,7 +27,7 @@ const CustomCatalog = (props) => {
             <div className={styles.grid}>
                 <BannerImage 
                     src={'/assets/img/women.webp'}
-                    title={t('custom:labelWomen')}
+                    title={t('custom:labelWoman')}
                     href={'/women'}
                     label={t('custom:labelButton')}
                 />
