@@ -15,6 +15,14 @@ const useStyles = makeStyles((theme) => ({
             paddingRight: 20,
         },
     },
+    grid: {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 1fr)',
+        [theme.breakpoints.down('sm')]: {
+            gridTemplateColumns: 'repeat(1, 1fr)',
+        },
+        marginBottom: '20px',
+    },
 }));
 
 export default useStyles;

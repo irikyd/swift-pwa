@@ -1,4 +1,8 @@
 {
     "title" : "Penjualan terbaik bulan ini",
-    "promoText" : "DAPATKAN EKSTRA POTONGAN MENGGUNAKAN KUPO KODE CGBNJKI25"
+    "promoText" : "DAPATKAN EKSTRA POTONGAN MENGGUNAKAN KUPO KODE CGBNJKI25",
+    "labelButton": "Lihat Selengkapnya",
+    "labelMen": "Pria",
+    "labelWoman": "Wanita",
+    "labelGear": "Gear"
 }
