@@ -80,7 +80,7 @@ const useStyles = makeStyles(() => ({
             justifyContent: 'center',
             alignItems: 'center',
             fontSize: 10,
-            borderRadius: '12px'
+            borderRadius: '12px',
         },
         '& .disabled-button': {
             backgroundColor: GRAY_SECONDARY,
