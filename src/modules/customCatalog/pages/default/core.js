@@ -59,7 +59,7 @@ const CustomCatalog = (props) => {
                     data={data.products.items}
                     ItemComponent={ProductItem}
                     className="grid"
-                    gridItemProps={{ xs: 6, sm: 4, md: 3 }}
+                    gridItemProps={{ xs: 12, sm: 4, md: 3 }}
                 />
             )}
         </Layout>
